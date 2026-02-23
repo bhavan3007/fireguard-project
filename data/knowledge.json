@@ -1,0 +1,383 @@
+[
+  {
+    "intent": "fire_extinguisher_use",
+    "keywords": [ "extinguisher", "use", "operate", "pass", "small", "control"],
+    "answer": {
+      "purpose": "To safely extinguish small and controllable fires.",
+      "steps": [
+        "Confirm the fire is small and not spreading rapidly.",
+        "Ensure a clear exit route behind you.",
+        "Pull the safety pin of the extinguisher.",
+        "Aim the nozzle at the base of the fire.",
+        "Squeeze the handle slowly.",
+        "Sweep side to side until the fire is extinguished."
+      ],
+      "warning": "Do not use water on electrical or flammable liquid fires.",
+      "escalation": "If the fire is not controlled immediately, evacuate and call emergency services."
+    }
+  },
+
+  {
+    "intent": "fire_extinguisher_failure",
+    "keywords": ["extinguisher", "empty", "failed", "not working", "pressure low"],
+    "answer": {
+      "purpose": "To respond safely when a fire extinguisher fails.",
+      "steps": [
+        "Stop attempting to extinguish the fire.",
+        "Maintain a safe distance.",
+        "Evacuate the area immediately.",
+        "Alert nearby personnel.",
+        "Activate the fire alarm."
+      ],
+      "warning": "Do not attempt to repair extinguisher during emergency.",
+      "escalation": "Contact emergency fire response team immediately."
+    }
+  },
+
+  {
+    "intent": "fire_hose_operation",
+    "keywords": ["fire", "hose", "pipe", "hydrant", "water pressure","water"],
+    "answer": {
+      "purpose": "To control large fires using continuous water supply.",
+      "steps": [
+        "Ensure at least two trained personnel are present.",
+        "Connect the hose securely to the water source.",
+        "Check nozzle grip and pressure control.",
+        "Open the water supply slowly.",
+        "Aim the water stream at the base of the fire."
+      ],
+      "warning": "High pressure can cause loss of control.",
+      "escalation": "Withdraw if fire intensifies and request fire engine support."
+    }
+  },
+
+  {
+    "intent": "fire_hydrant_use",
+    "keywords": ["hydrant", "valve", "water supply", "hydrant operation"],
+    "answer": {
+      "purpose": "To supply high-pressure water for firefighting operations.",
+      "steps": [
+        "Remove hydrant cap using appropriate tool.",
+        "Connect hose tightly to the outlet.",
+        "Ensure hose line is straight and clear.",
+        "Open valve slowly to control pressure.",
+        "Coordinate with hose team."
+      ],
+      "warning": "Sudden pressure release can damage equipment.",
+      "escalation": "If hydrant pressure is insufficient, escalate to fire engine support."
+    }
+  },
+
+  {
+    "intent": "gas_leak_emergency",
+    "keywords": ["gas", "leak", "smell", "detector", "alarm"],
+    "answer": {
+      "purpose": "To prevent ignition and injury during gas leak incidents.",
+      "steps": [
+        "Do not operate electrical switches.",
+        "Shut off gas supply if safe to do so.",
+        "Ventilate the area naturally.",
+        "Evacuate all occupants immediately."
+      ],
+      "warning": "Avoid sparks, flames, or mobile phone usage.",
+      "escalation": "Inform emergency gas response services immediately."
+    }
+  },
+
+  {
+    "intent": "smoke_filled_environment",
+    "keywords": ["smoke", "visibility", "cannot see", "breathing", "dark","filled"],
+    "answer": {
+      "purpose": "To safely escape from smoke-filled environments.",
+      "steps": [
+        "Stay close to the floor.",
+        "Cover nose and mouth with cloth.",
+        "Follow walls or exit signage.",
+        "Avoid opening hot doors."
+      ],
+      "warning": "Smoke inhalation can be fatal.",
+      "escalation": "If exit is blocked, signal for help and remain low."
+    }
+  },
+
+  {
+    "intent": "breathing_apparatus_use",
+    "keywords": ["breathing", "apparatus", "oxygen", "mask", "air cylinder"],
+    "answer": {
+      "purpose": "To provide breathable air in hazardous environments.",
+      "steps": [
+        "Inspect air cylinder pressure.",
+        "Secure mask properly to prevent leakage.",
+        "Monitor air supply continuously.",
+        "Exit area before air supply is depleted."
+      ],
+      "warning": "Do not enter hazardous area alone.",
+      "escalation": "Exit immediately if air supply becomes insufficient."
+    }
+  },
+
+  {
+    "intent": "fire_ppe_usage",
+    "keywords": ["helmet", "gloves", "boots", "uniform", "ppe"],
+    "answer": {
+      "purpose": "To protect personnel from heat, impact, and burns.",
+      "steps": [
+        "Inspect PPE for damage.",
+        "Wear helmet, gloves, boots, and fire-resistant uniform.",
+        "Ensure proper fit and coverage.",
+        "Replace damaged PPE immediately."
+      ],
+      "warning": "Never enter fire area without proper PPE.",
+      "escalation": "Withdraw from operation if PPE is damaged."
+    }
+  },
+
+  {
+    "intent": "rescue_and_evacuation",
+    "keywords": ["rescue", "evacuate", "exit", "escape", "assembly","fire"],
+    "answer": {
+      "purpose": "To safely evacuate personnel during emergencies.",
+      "steps": [
+        "Activate fire alarm.",
+        "Guide occupants to nearest safe exit.",
+        "Assist injured or disabled persons.",
+        "Assemble at designated safe point.",
+        "Conduct headcount verification."
+      ],
+      "warning": "Do not use elevators.",
+      "escalation": "Report missing persons to emergency responders."
+    }
+  },
+
+  {
+  "intent": "first_aid_fire_burns",
+  "keywords": [
+    "first",
+    "aid",
+    "burn",
+    "burns",
+    "fire",
+    "injured",
+    "injury",
+    "affected",
+    "wound"
+  ],
+  "answer": {
+    "purpose": "To provide immediate first aid for burn injuries caused by fire.",
+    "steps": [
+      "Move the injured person away from the heat source.",
+      "Cool the burn under clean running water for at least 10 minutes.",
+      "Remove tight items like rings or watches near the burn area.",
+      "Cover the burn with a sterile, non-stick dressing.",
+      "Keep the person calm and monitor breathing."
+    ],
+    "warning": "Do not apply oils, creams, ice, or burst blisters.",
+    "escalation": "Seek immediate medical attention for severe or large burns."
+  }
+},
+
+{
+  "intent": "electrical_fire_handling",
+  "keywords": [
+    "electrical",
+    "short",
+    "circuit",
+    "wire",
+    "socket",
+    "panel",
+    "switch",
+    "electric"
+  ],
+  "answer": {
+    "purpose": "To safely respond to fires caused by electrical equipment.",
+    "steps": [
+      "Switch off main electrical power if safe to do so.",
+      "Do not use water on electrical fires.",
+      "Use CO2 or dry powder fire extinguisher.",
+      "Maintain safe distance while extinguishing.",
+      "Evacuate if fire is uncontrollable."
+    ],
+    "warning": "Using water can cause electric shock.",
+    "escalation": "Call fire services and isolate power supply immediately."
+  }
+},
+{
+  "intent": "kitchen_oil_fire",
+  "keywords": [
+    "kitchen",
+    "oil",
+    "cooking",
+    "stove",
+    "pan",
+    "gas",
+    "flame"
+  ],
+  "answer": {
+    "purpose": "To control fires caused by cooking oil or grease.",
+    "steps": [
+      "Turn off the gas supply immediately.",
+      "Cover the pan with a metal lid to cut oxygen.",
+      "Use fire blanket if available.",
+      "Keep a safe distance from flames.",
+      "Evacuate if fire spreads."
+    ],
+    "warning": "Never pour water on oil fires.",
+    "escalation": "Call fire emergency services if fire is not controlled quickly."
+  }
+},
+{
+  "intent": "kitchen_oil_fire",
+  "keywords": [
+    "kitchen",
+    "oil",
+    "cooking",
+    "stove",
+    "pan",
+    "gas",
+    "flame"
+  ],
+  "answer": {
+    "purpose": "To control fires caused by cooking oil or grease.",
+    "steps": [
+      "Turn off the gas supply immediately.",
+      "Cover the pan with a metal lid to cut oxygen.",
+      "Use fire blanket if available.",
+      "Keep a safe distance from flames.",
+      "Evacuate if fire spreads."
+    ],
+    "warning": "Never pour water on oil fires.",
+    "escalation": "Call fire emergency services if fire is not controlled quickly."
+  }
+},
+{
+  "intent": "person_trapped_in_fire",
+  "keywords": [
+    "trapped",
+    "stuck",
+    "inside",
+    "person",
+    "room",
+    "rescue"
+  ],
+  "answer": {
+    "purpose": "To respond when a person is trapped during a fire emergency.",
+    "steps": [
+      "Do not enter smoke-filled area without protection.",
+      "Alert fire rescue team immediately.",
+      "Guide trapped person to stay low and signal for help.",
+      "Close doors to slow fire spread if possible."
+    ],
+    "warning": "Untrained rescue attempts can be fatal.",
+    "escalation": "Fire rescue services must handle trapped-person scenarios."
+  }
+},
+{
+  "intent": "office_fire_response",
+  "keywords": [
+    "office",
+    "workplace",
+    "company",
+    "building",
+    "floor",
+    "staff"
+  ],
+  "answer": {
+    "purpose": "To safely manage fire incidents in office environments.",
+    "steps": [
+      "Activate fire alarm immediately.",
+      "Shut down electrical equipment if safe.",
+      "Evacuate employees in an orderly manner.",
+      "Assist visitors and disabled persons.",
+      "Assemble at emergency meeting point."
+    ],
+    "warning": "Avoid panic and running.",
+    "escalation": "Report to fire safety officer and emergency services."
+  }
+},
+{
+  "intent": "industrial_fire_response",
+  "keywords": [
+    "factory",
+    "industrial",
+    "plant",
+    "machine",
+    "chemical",
+    "warehouse"
+  ],
+  "answer": {
+    "purpose": "To handle fires in industrial or manufacturing facilities.",
+    "steps": [
+      "Trigger emergency shutdown procedures.",
+      "Isolate hazardous materials if safe.",
+      "Use appropriate industrial fire extinguishers.",
+      "Evacuate non-essential personnel.",
+      "Maintain communication with fire brigade."
+    ],
+    "warning": "Industrial fires can escalate rapidly.",
+    "escalation": "Immediate fire brigade and disaster response required."
+  }
+},
+{
+  "intent": "fire_blanket_use",
+  "keywords": [
+    "blanket",
+    "fire blanket",
+    "cover",
+    "smother",
+    "fire"
+  ],
+  "answer": {
+    "purpose": "To extinguish small fires or protect a person using a fire blanket.",
+    "steps": [
+      "Hold the blanket in front to protect hands.",
+      "Place gently over the fire or person.",
+      "Do not throw the blanket.",
+      "Turn off heat source if possible."
+    ],
+    "warning": "Do not uncover immediately after use.",
+    "escalation": "Seek medical help if person is injured."
+  }
+},
+{
+  "intent": "fire_drill_procedure",
+  "keywords": [
+    "drill",
+    "mock",
+    "practice",
+    "training"
+  ],
+  "answer": {
+    "purpose": "To ensure preparedness through fire drill exercises.",
+    "steps": [
+      "Participate seriously during drills.",
+      "Follow evacuation routes.",
+      "Assemble at designated area.",
+      "Provide feedback after drill."
+    ],
+    "warning": "Do not treat drills casually.",
+    "escalation": "Report any safety gaps to management."
+  }
+},
+{
+  "intent": "when_to_call_fire_services",
+  "keywords": [
+    "call",
+    "fire service",
+    "emergency",
+    "number",
+    "help",
+    "contact"
+  ],
+  "answer": {
+    "purpose": "To identify situations requiring immediate fire service assistance.",
+    "steps": [
+      "Call fire services if fire is uncontrollable.",
+      "Provide clear location details.",
+      "Inform about trapped persons if any.",
+      "Follow instructions given by emergency operator."
+    ],
+    "warning": "Delay in calling can worsen the situation.",
+    "escalation": "Dial 101 or 112 immediately."
+  }
+}
+]

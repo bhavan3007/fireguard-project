@@ -1,0 +1,15 @@
+# Node
+frontend/fireguard-ui/node_modules
+frontend/fireguard-ui/dist
+frontend/fireguard-ui/.env
+
+# Python
+backend/__pycache__
+backend/venv
+backend/*.pyc
+backend/.env
+
+
+# Env files
+.env
+*.env
